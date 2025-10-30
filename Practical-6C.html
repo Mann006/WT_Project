@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      width: 100%;
+      height: 200px;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .grow {
+      flex-grow: 1;
+    }
+
+    .shrink {
+      flex-shrink: 1;
+      flex-basis: 300px;
+    }
+
+    .basis {
+      flex-basis: 150px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grow">
+      <img src="images/first.jpg">
+    </div>
+    <div class="shrink">
+      <img src="images/second.jpg">
+    </div>
+    <div class="basis">
+      <img src="images/first.jpg">
+    </div>
+  </div>
+</body>
+</html>

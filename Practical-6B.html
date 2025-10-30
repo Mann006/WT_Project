@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title> Responsive Gallery </title>
+        <style>
+            .hdr{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                flex-direction: row;
+                font-size: 36px;
+            }
+
+            .flex-container {
+              display: flex;
+              flex-wrap: wrap;
+              background-color: rgb(37, 222, 222);
+              justify-content: center;
+            }
+
+            .flex-container > div {
+              flex: 0 0 calc(25% - 10px); /* 25% width minus margin */
+              margin: 5px;
+            }
+
+            .flex-container img {
+              height: 300px;
+              width: 100%; /* fill the parent div */
+              object-fit: cover;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="hdr">
+            <b>Responsive Gallery using HTML and CSS</b>
+        </div>
+
+        <div class="flex-container">
+            <div><img src="images/pexels-george-desipris-792381.jpg"></img></div>
+            <div><img src="images/pexels-pixabay-45201.jpg"></img></div>
+            <div><img src="images/first.jpg"></img></div>
+            <div><img src="images/second.jpg"></img></div>
+            <div><img src="images/pexels-george-desipris-792381.jpg"></img></div>
+            <div><img src="images/pexels-pixabay-45201.jpg"></img></div>
+            <div><img src="images/first.jpg"></img></div>
+            <div><img src="images/second.jpg"></img></div>
+            <div><img src="images/pexels-george-desipris-792381.jpg"></img></div>
+            <div><img src="images/pexels-pixabay-45201.jpg"></img></div>
+            <div><img src="images/first.jpg"></img></div>
+            <div><img src="images/second.jpg"></img></div>
+        </div>
+
+    </body>
+</html>
+
